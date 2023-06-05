@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>John's Wheel of Fortune</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+  </head>
+
+  <body>
+    <form name="userForm" class="form">
+      <img class="marker" src="assets/images/arrow.png" />
+
+      <div class="title-sub">Welcome to </div>
+      <div class="title">John's Wheel of Fortune </div>
+      <div class="form-field">
+        <label>Name</label>
+        <input type="text" name="name" id="name" required>
+      </div>
+      <div class="form-field">
+        <label>Surname</label>
+        <input type="text" name="surname" id="surname" required>
+      </div>
+      <div class="form-field">
+        <label>Email</label>
+        <input type="email" name="email" id="email" required>
+      </div>
+      <div class="form-field">
+        <input class="submit" type="submit" value="Submit">
+      </div>
+      <div class="validation-message"></div>
+    </form>
+    <div class="game" style="display: none;">
+      <img class="marker" src="assets/images/arrow.png" />
+      <img class="wheel" src="assets/images/wheel-jf.png" />
+      <div class="title-sub">Winning options</div>
+      <div class="winner">
+        <div class="winner_container">
+          <!-- winner options here -->
+        </div>
+      </div>
+      <div class="message"></div>
+      <img class="button" src="assets/images/button.png" />
+      <div class="attemp">Attempts: <span class="attemp_number"></span></div>
+    </div>
+
+    <script src="js/functions.js"></script>
+    <script src="js/wheel-of-fortune.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
