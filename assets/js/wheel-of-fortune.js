@@ -117,7 +117,7 @@ class wheelOfFortune {
       this.events.gameOverEvent(true);
       return;
     } else if (!this.attempts) {
-      this.elements.messageContainer.innerHTML = 'Game over';
+      this.elements.messageContainer.innerHTML = 'Gameover! Try next time';
       this.elements.messageContainer.classList.add('message--red');
       this.elements.startButton.style.display = 'none';
       this.events.gameOverEvent(false);
